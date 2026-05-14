@@ -6,7 +6,8 @@ public class DeleteTrainUseCase {
     public DeleteTrainUseCase(TrainsRepository trainsRepository) {
         this.trainsRepository = trainsRepository;
     }
-    public void execute(String id){
+
+    public void execute(String id) {
         trainsRepository.delete(id);
 
     }
