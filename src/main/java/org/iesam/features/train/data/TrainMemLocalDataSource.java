@@ -21,8 +21,9 @@ public class TrainMemLocalDataSource {
     public void delete(String trainId) {
         storage.removeIf(train -> Objects.equals(train.getId(), trainId));
     }
-    public static TrainMemLocalDataSource newInstance(){
-        if (instance == null){
+
+    public static TrainMemLocalDataSource newInstance() {
+        if (instance == null) {
             instance = new TrainMemLocalDataSource();
         }
         return instance;

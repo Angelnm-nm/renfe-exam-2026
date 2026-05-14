@@ -8,7 +8,8 @@ public class GetAllTrainUseCase {
     public GetAllTrainUseCase(TrainsRepository trainsRepository) {
         this.trainsRepository = trainsRepository;
     }
-    public ArrayList<Train> execute(){
+
+    public ArrayList<Train> execute() {
         return trainsRepository.getAll();
     }
 }

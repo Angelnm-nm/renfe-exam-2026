@@ -6,7 +6,8 @@ public class AddTrainUseCase {
     public AddTrainUseCase(TrainsRepository trainsRepository) {
         this.trainsRepository = trainsRepository;
     }
-    public void execute(Train train){
+
+    public void execute(Train train) {
         trainsRepository.add(train);
     }
 }
